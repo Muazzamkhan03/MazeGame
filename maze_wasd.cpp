@@ -12,12 +12,12 @@
 // .: Space
 // F: Finish
 // P: Player
-
-const char maze[5][5]={{'_','v','_','_','_'},
-                       {'|','.','.','|','|'},
-                       {'|','|','.','|','|'},
-                       {'|','.','.','.','|'},
-                       {'|','_','_','v','|'}};
+                               
+// const char maze[5][5]={{'_','v','_','_','_'},
+//                        {'|','.','.','|','|'},
+//                        {'|','|','.','|','|'},
+//                        {'|','.','.','.','|'},
+//                        {'|','_','_','v','|'}};
 
 //MANAGER
 void Clear(){
@@ -69,18 +69,18 @@ void InputHandle(int &pX, int &pY){
 }
 
 // IN MAZE CLASS 
-void Display(int &pX, int &pY){
-    for(int i=0;i<5;i++){
-        for(int j=0;j<5;j++){
-            if(j==pX && i==pY){//instead of the maze char, put player's 'P' 
-                std::cout<<"P ";
-                continue;
-            }
-            std::cout<<maze[i][j]<<" ";
-        }
-        std::cout<<"\n";
-    }
-}
+// void Display(int &pX, int &pY){
+//     for(int i=0;i<5;i++){
+//         for(int j=0;j<5;j++){
+//             if(j==pX && i==pY){//instead of the maze char, put player's 'P' 
+//                 std::cout<<"P ";
+//                 continue;
+//             }
+//             std::cout<<maze[i][j]<<" ";
+//         }
+//         std::cout<<"\n";
+//     }
+// }
 
 // IN MANAGER CLASS 
 bool CheckWinCondition(int &pX, int &pY){

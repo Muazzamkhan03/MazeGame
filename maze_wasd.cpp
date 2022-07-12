@@ -64,23 +64,25 @@ void InputHandle(int &pX, int &pY){
         }
 }
 }
+
 void Display(int &pX, int &pY){
-for(int i=0;i<5;i++){
-    for(int j=0;j<5;j++){
-        if(j==pX && i==pY){//instead of the maze char, put player's 'P' 
-            std::cout<<"P ";
-            continue;
+    for(int i=0;i<5;i++){
+        for(int j=0;j<5;j++){
+            if(j==pX && i==pY){//instead of the maze char, put player's 'P' 
+                std::cout<<"P ";
+                continue;
+            }
+            std::cout<<maze[i][j]<<" ";
         }
-        std::cout<<maze[i][j]<<" ";
+        std::cout<<"\n";
     }
-    std::cout<<"\n";
 }
-}
+
 bool CheckWinCondition(int &pX, int &pY){
-if(pX==3 && pY ==4){
-    return true;
-}
-return false;
+    if(pX==3 && pY ==4){
+        return true;
+    }
+    return false;
 }
 
 int main(){

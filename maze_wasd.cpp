@@ -79,7 +79,7 @@ void Display(int &pX, int &pY){
 }
 
 bool CheckWinCondition(int &pX, int &pY){
-    if(pX==3 && pY ==4){
+    if(pX==3 && pY ==4){  //x-2, y-1
         return true;
     }
     return false;

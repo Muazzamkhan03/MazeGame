@@ -20,7 +20,11 @@ const char maze[5][5]={{'#','S','#','#','#'},
                        {'#','#','#','F','#'}};
 
 void Clear(){
-    system("clear");//clear console
+    #ifdef _WIN32
+        system("cls");
+    #else
+        system("clear");
+    #endif
 }
 void InputHandle(int &pX, int &pY){
     char move;

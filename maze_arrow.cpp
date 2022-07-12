@@ -21,6 +21,7 @@ const char maze[5][5]={{'#','S','#','#','#'},
 
 void Clear(){
     system("CLS");//clear console
+    
 }
 void InputHandle(int move, int &pX, int &pY){
     switch(move=getch()){

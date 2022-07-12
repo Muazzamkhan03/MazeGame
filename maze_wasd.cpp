@@ -13,12 +13,13 @@
 // F: Finish
 // P: Player
 
-const char maze[5][5]={{'#','S','#','#','#'},
-                       {'#','.','.','#','#'},
-                       {'#','#','.','#','#'},
-                       {'#','.','.','.','#'},
-                       {'#','#','#','F','#'}};
+const char maze[5][5]={{'_','v','_','_','_'},
+                       {'|','.','.','|','|'},
+                       {'|','|','.','|','|'},
+                       {'|','.','.','.','|'},
+                       {'|','_','_','v','|'}};
 
+//MANAGER
 void Clear(){
     #ifdef _WIN32
         system("cls");
@@ -26,6 +27,8 @@ void Clear(){
         system("clear");
     #endif
 }
+
+//MANAGER
 void InputHandle(int &pX, int &pY){
     char move;
     std::cout<<"Make a move\n";
@@ -34,7 +37,7 @@ void InputHandle(int &pX, int &pY){
     switch(move){
             case KEY_UP:
             if( pY-1 >= 0 ){
-                if(maze[pY-1][pX] != '#'){//if it is not the limit or it is not the wall(#) move player 
+                if(maze[pY-1][pX] != '|'&&maze[pY-1][pX] != '_'){//if it is not the limit or it is not the wall(#) move player 
                 pY--;
             }
         }
@@ -42,7 +45,7 @@ void InputHandle(int &pX, int &pY){
 
         case KEY_DOWN:
         if( pY+1 <= 4 ){
-            if(maze[pY+1][pX] != '#'){
+            if(maze[pY+1][pX] != '|'&&maze[pY+1][pX] != '_'){
                 pY++;
             }
         }
@@ -50,7 +53,7 @@ void InputHandle(int &pX, int &pY){
 
         case KEY_RIGHT:
         if( pX+1 <= 4 ){
-            if(maze[pY][pX+1] != '#'){
+            if(maze[pY][pX+1] != '|'&&maze[pY][pX+1] != '_'){
                 pX++;
             }
         }
@@ -58,13 +61,14 @@ void InputHandle(int &pX, int &pY){
 
         case KEY_LEFT:
             if( pX-1 >= 0 ){
-            if(maze[pY][pX-1] != '#'){
+            if(maze[pY][pX-1] != '|'&&maze[pY][pX-1] != '_'){
                 pX--;
             }
         }
 }
 }
 
+// IN MAZE CLASS 
 void Display(int &pX, int &pY){
     for(int i=0;i<5;i++){
         for(int j=0;j<5;j++){
@@ -78,6 +82,7 @@ void Display(int &pX, int &pY){
     }
 }
 
+// IN MANAGER CLASS 
 bool CheckWinCondition(int &pX, int &pY){
     if(pX==3 && pY ==4){  //x-2, y-1
         return true;

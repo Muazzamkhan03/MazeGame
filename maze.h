@@ -3,11 +3,11 @@
 
 #include <iostream>
 
-class Maze1{
+class Maze{
     private:
         char maze[5][5];
     public:
-        Maze1();
+        Maze();
         void Display(int , int );
         char getElement(int, int);
 

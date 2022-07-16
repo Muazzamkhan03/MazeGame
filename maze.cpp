@@ -8,7 +8,7 @@ Maze1::Maze1(){
                        {'|','_','_','v','|'}};
 }
 
-void Maze1::Display(int &pX, int &pY){
+void Maze1::Display(int pX, int pY){
             for(int i=0;i<5;i++){
                 for(int j=0;j<5;j++){
                     if(j==pX && i==pY){//instead of the maze char, put player's 'P' 

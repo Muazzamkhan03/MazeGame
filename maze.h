@@ -8,7 +8,7 @@ class Maze1{
         char maze[5][5];
     public:
         Maze1();
-        void Display(int &, int &);
+        void Display(int , int );
         char getElement(int, int);
 
 };

@@ -1,7 +1,7 @@
 #ifndef MANAGER
 #define MANAGER
 
-#include <iostream>
+
 #include "maze.h"
 #include "player.h"
 

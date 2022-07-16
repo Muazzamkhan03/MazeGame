@@ -2,6 +2,7 @@
 #define MAZE
 
 #include <iostream>
+#include <limits>
 
 class Maze{
     private:

@@ -1,8 +1,6 @@
 #include "manager.h"
 
-Manager::Manager(){
-    win = false;
-}
+
 
 void Manager::Clear(){
     #ifdef _WIN32

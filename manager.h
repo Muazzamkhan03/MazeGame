@@ -11,11 +11,9 @@
 #define KEY_RIGHT 'd'
 
 class Manager{
-    bool win;
     Maze1 maze;
     Player player;
     public:
-        Manager();
         void Clear();
         void Input();
         bool checkWin();

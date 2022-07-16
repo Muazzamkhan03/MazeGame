@@ -64,6 +64,7 @@ void Manager::Game(){
         Input();
         std::cin.ignore(std::numeric_limits<std::streamsize>::max(),'\n');
         Clear();
+        checkWin();
     }
     std::cout<<"Congrats, you finished the maze\n";
 

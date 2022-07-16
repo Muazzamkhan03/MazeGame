@@ -1,7 +1,6 @@
 #include "manager.h"
 
 
-
 void Manager::Clear(){
     #ifdef _WIN32
         system("cls");

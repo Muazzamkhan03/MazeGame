@@ -11,7 +11,7 @@
 #define KEY_RIGHT 'd'
 
 class Manager{
-    Maze1 maze;
+    Maze maze;
     Player player;
     public:
         void Clear();

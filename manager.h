@@ -18,7 +18,7 @@ class Manager{
         Manager();
         void Clear();
         void Input();
-        void checkWin();
+        bool checkWin();
         void Game();
 
 };

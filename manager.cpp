@@ -51,20 +51,19 @@ void Manager::Input(){
     }
 }
 
-void Manager::checkWin(){
+bool Manager::checkWin(){
     if(player.getX()==3 && player.getY() ==4){  //x-2, y-1
-        win = true;
+        return true;
     }
-    win = false;
+    return false;
 }
 
 void Manager::Game(){
-    while(!win){
+    while(!checkWin()){
         maze.Display(player.getX(),player.getY());
         Input();
         std::cin.ignore(std::numeric_limits<std::streamsize>::max(),'\n');
         Clear();
-        checkWin();
     }
     std::cout<<"Congrats, you finished the maze\n";
 

@@ -9,6 +9,7 @@ class Maze{
         char maze[5][5];
     public:
         Maze();
+        void level(int );
         void Display(int , int );
         char getElement(int, int);
 

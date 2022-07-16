@@ -1,5 +1,8 @@
 #include "manager.h"
 
+void Manager::levelChoice(int choice){
+    maze.level(choice);
+}
 
 void Manager::Clear(){
     #ifdef _WIN32

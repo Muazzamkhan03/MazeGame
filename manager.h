@@ -13,6 +13,7 @@
 class Manager{
     Maze maze;
     Player player;
+    int lev;
     public:
         void levelChoice(int);
         void Clear();

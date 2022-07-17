@@ -2,6 +2,7 @@
 
 void Manager::levelChoice(int choice){
     maze.level(choice);
+    Manager::lev = choice;
 }
 
 void Manager::Clear(){
@@ -52,10 +53,14 @@ void Manager::Input(){
 }
 
 bool Manager::checkWin(){
-    if(player.getX()==3 && player.getY() ==4){  //x-2, y-1
+    if(lev == 1 && player.getX()==3 && player.getY() ==4){  //x-2, y-1
+        return true;
+    }
+    else if(lev == 2 && player.getX()==8 && player.getY() ==9){  //x-2, y-1
         return true;
     }
     return false;
+
 }
 
 void Manager::Game(){

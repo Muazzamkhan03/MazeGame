@@ -55,14 +55,14 @@ void Manager::Input(){
 bool Manager::checkWin(){
     switch(this->level){
         case 1:
-            if(player.getX()==4 && player.getY() ==10){  //x-2, y-1
+            if(player.getX()==8 && player.getY() ==10){  //x-2, y-1
                 return true;
             }
             return false;
             break;
 
         case 2:
-            if(player.getX()==8 && player.getY() ==10){  //x-2, y-1
+            if(player.getX()==5 && player.getY() ==10){  //x-2, y-1
                 return true;
             }
             return false;
@@ -83,7 +83,7 @@ bool Manager::checkWin(){
             break;
         
         case 5:
-            if(player.getX()==5 && player.getY() ==10){  //x-2, y-1
+            if(player.getX()==4 && player.getY() ==10){  //x-2, y-1
                 return true;
             }
             return false;

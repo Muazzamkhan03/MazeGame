@@ -14,6 +14,7 @@ class Manager{
     Maze maze;
     Player player;
     int level;
+    char playagain;
     public:
         void levelChoice(int);
         void Clear();

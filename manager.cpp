@@ -103,5 +103,19 @@ void Manager::Game(){
         Clear();
     }
     std::cout<<"Congrats, you finished the maze\n";
+    std::cout<<"Press Y to Play Again or N to exit \n";
+    std::cin >> playagain;
+    
+    if (playagain == 'y' || playagain == 'Y'){
+        std::cout<<"***** WELCOME TO MAZE GAME *****\n"
+             <<"Enter the level you want to play:  1  2  3  4  5 \n";
+        std::cin>>level;
+        Manager mazegam;
+        mazegam.levelChoice(level);
+        mazegam.Game();
+    }
+    else{
+        std::cout<<"Thanks for Playing \n \"Wish You A Good Day\" \n";
+    }
 
 }

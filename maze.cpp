@@ -41,6 +41,7 @@ void Maze::level(int choice){
             maze[10][0]= '|'; maze[10][1]= '_'; maze[10][2]= '_'; maze[10][3]= '_'; maze[10][4]= 'v';maze[10][5]= '_'; maze[10][6]= '_'; maze[10][7]= '_'; maze[10][8]= '_'; maze[10][9]= '|'; 
            
             break;
+            
         default:
             break;
     }

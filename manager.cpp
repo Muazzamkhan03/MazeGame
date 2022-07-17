@@ -67,7 +67,14 @@ bool Manager::checkWin(){
             }
             return false;
             break;
-        
+
+        case 3:
+            if(player.getX()==4 && player.getY() ==10){  //x-2, y-1
+                return true;
+            }
+            return false;
+            break;
+            
         default:
             break;
     }

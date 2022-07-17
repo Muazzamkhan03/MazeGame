@@ -55,7 +55,7 @@ void Manager::Input(){
 bool Manager::checkWin(){
     switch(this->level){
         case 1:
-            if(player.getX()==3 && player.getY() ==4){  //x-2, y-1
+            if(player.getX()==4 && player.getY() ==10){  //x-2, y-1
                 return true;
             }
             return false;

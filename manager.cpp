@@ -1,8 +1,8 @@
 #include "manager.h"
 
 void Manager::levelChoice(int choice){
-    maze.level(choice);
-    Manager::lev = choice;
+    this->level = choice;
+    maze.level(this->level);
 }
 
 void Manager::Clear(){
@@ -21,23 +21,23 @@ void Manager::Input(){
     switch(move){
             case KEY_UP:
             if( ((player.getY())-1) >= 0 ){
-                if(maze.getElement((player.getY()-1), player.getX()) != '|'&& maze.getElement((player.getY()-1), player.getX()) != '_'){//if it is not the limit or it is not the wall(#) move player 
+                if(maze.getElement((player.getY()-1), player.getX()) == '.'){//if it is not the limit or it is not the wall(#) move player 
                 player.decY();
             }
         }
         break;
 
         case KEY_DOWN:
-        if( (player.getY()+1) <= 4 ){
-            if(maze.getElement((player.getY()+1), player.getX()) != '|'&& maze.getElement((player.getY()+1), player.getX()) != '_'){
+        if( (player.getY()+1) <= 11 ){
+            if(maze.getElement((player.getY()+1), player.getX()) == '.'){
                 player.incY();
             }
         }
         break;
 
         case KEY_RIGHT:
-        if( player.getX()+1 <= 4 ){
-            if(maze.getElement(player.getY(), (player.getX()+1)) != '|'&& maze.getElement(player.getY(), (player.getX()+1)) != '_'){
+        if( player.getX()+1 <= 11 ){
+            if(maze.getElement(player.getY(), (player.getX()+1)) == '.'){
                 player.incX();
             }
         }
@@ -45,7 +45,7 @@ void Manager::Input(){
 
         case KEY_LEFT:
             if( player.getX()-1 >= 0 ){
-            if(maze.getElement(player.getY(), (player.getX()-1)) != '|'&& maze.getElement(player.getY(), (player.getX()-1)) != '_'){
+            if(maze.getElement(player.getY(), (player.getX()-1)) == '.'){
                 player.decX();
             }
         }
@@ -53,13 +53,22 @@ void Manager::Input(){
 }
 
 bool Manager::checkWin(){
-    if(lev == 1 && player.getX()==3 && player.getY() ==4){  //x-2, y-1
-        return true;
+    switch(this->level){
+        case 1:
+            if(player.getX()==3 && player.getY() ==4){  //x-2, y-1
+                return true;
+            }
+            return false;
+            break;
+        case 2:
+            if(player.getX()==8 && player.getY() ==10){  //x-2, y-1
+                return true;
+            }
+            return false;
+            break;
+        default:
+            break;
     }
-    else if(lev == 2 && player.getX()==8 && player.getY() ==9){  //x-2, y-1
-        return true;
-    }
-    return false;
 
 }
 

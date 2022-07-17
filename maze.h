@@ -6,10 +6,10 @@
 
 class Maze{
     private:
-        char maze[5][5];
+        char maze[11][11];
     public:
         Maze();
-        void level(int );
+        void level(int);
         void Display(int , int );
         char getElement(int, int);
 

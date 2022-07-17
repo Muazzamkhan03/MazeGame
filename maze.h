@@ -6,7 +6,7 @@
 
 class Maze{
     private:
-        char maze[11][11];
+        char maze[11][10];
     public:
         Maze();
         void level(int);

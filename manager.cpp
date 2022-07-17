@@ -21,7 +21,7 @@ void Manager::Input(){
     switch(move){
             case KEY_UP:
             if( ((player.getY())-1) >= 0 ){
-                if(maze.getElement((player.getY()-1), player.getX()) == '.'){//if it is not the limit or it is not the wall(#) move player 
+                if(maze.getElement((player.getY()-1), player.getX()) == '.' || maze.getElement((player.getY()-1), player.getX()) == 'v'){//if it is not the limit or it is not the wall(#) move player 
                 player.decY();
             }
         }
@@ -29,7 +29,7 @@ void Manager::Input(){
 
         case KEY_DOWN:
         if( (player.getY()+1) <= 11 ){
-            if(maze.getElement((player.getY()+1), player.getX()) == '.'){
+            if(maze.getElement((player.getY()+1), player.getX()) == '.' || maze.getElement((player.getY()+1), player.getX()) == 'v'){
                 player.incY();
             }
         }
@@ -37,7 +37,7 @@ void Manager::Input(){
 
         case KEY_RIGHT:
         if( player.getX()+1 <= 11 ){
-            if(maze.getElement(player.getY(), (player.getX()+1)) == '.'){
+            if(maze.getElement(player.getY(), (player.getX()+1)) == '.' || maze.getElement(player.getY(), (player.getX()+1)) == 'v'){
                 player.incX();
             }
         }
@@ -45,7 +45,7 @@ void Manager::Input(){
 
         case KEY_LEFT:
             if( player.getX()-1 >= 0 ){
-            if(maze.getElement(player.getY(), (player.getX()-1)) == '.'){
+            if(maze.getElement(player.getY(), (player.getX()-1)) == '.' || maze.getElement(player.getY(), (player.getX()-1)) == 'v'){
                 player.decX();
             }
         }

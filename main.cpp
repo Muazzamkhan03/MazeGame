@@ -1,7 +1,7 @@
-#include "manager.h"
+#include "game.h"
 
 int main(){
-    Manager mazeGame;
+    Game mazeGame;
     int level;
     char choice;
     
@@ -18,7 +18,7 @@ int main(){
     system("clear");
     #endif
     
-    mazeGame.Game();
+    mazeGame.Play();
     std::cout<<"Would you like to play again? Enter y to play again and n to exit\n";
     std::cin>> choice;
 

@@ -11,15 +11,15 @@
 #define KEY_RIGHT 'd'
 
 class Manager{
-    Maze maze;
-    Player player;
     int level;
+    protected:
+        Maze maze;
+        Player player;
     public:
         void levelChoice(int);
         void Clear();
         void Input();
         bool checkWin();
-        void Game();
 
 };
 

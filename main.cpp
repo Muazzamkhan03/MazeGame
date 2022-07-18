@@ -25,8 +25,5 @@ int main(){
     if(choice == 'y' || choice == 'Y'){
         goto a;
     }
-    
-
-        
-    
+     
 }

@@ -1,1 +1,1 @@
-g++ maze.cpp player.cpp manager.cpp main.cpp
+g++ maze.cpp player.cpp manager.cpp game.cpp main.cpp

@@ -14,11 +14,11 @@ void Manager::Clear(){
 }
 
 void Manager::Input(){
-    
+    int move;
     std::cout<<"\nUse arrows key to move\n";
     
     
-    switch(getch()){
+    switch(move = getch()){
             case KEY_UP:
             if( ((player.getY())-1) >= 0 ){
                 if(maze.getElement((player.getY()-1), player.getX()) == '.' || maze.getElement((player.getY()-1), player.getX()) == '^'){//if it is not the limit or it is not the wall(#) move player 

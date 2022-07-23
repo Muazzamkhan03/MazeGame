@@ -14,6 +14,7 @@ void Manager::Clear(){
 }
 
 void Manager::Input(){
+    std::cout<<"\nUse arrow keys to move\n";
     int move;
     switch(move = getch()){
             case KEY_UP:

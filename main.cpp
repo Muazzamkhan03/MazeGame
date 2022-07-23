@@ -17,7 +17,7 @@ int main(){
     #else
     system("clear");
     #endif
-    std::cout<<"\nUse arrow keys to move\n";
+    
     mazeGame.Play();
     std::cout<<"Would you like to play again? Enter y to play again and n to exit\n";
     std::cin>> choice;

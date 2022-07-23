@@ -15,9 +15,6 @@ void Manager::Clear(){
 
 void Manager::Input(){
     int move;
-    std::cout<<"\nUse arrow keys to move\n";
-    
-    
     switch(move = getch()){
             case KEY_UP:
             if( ((player.getY())-1) >= 0 ){

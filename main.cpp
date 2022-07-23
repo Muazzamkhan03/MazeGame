@@ -3,8 +3,16 @@
 int main(){
     int level;
     char choice;
-    
-    std::cout<<"\n***** MAZE RUNNER  *****\n";
+    // std::cout<<"\n***** MAZE RUNNER  *****\n";
+    std::cout<<"\n";
+    std:: cout << "\t\t\t\t" <<  "         __   ___  __     _                  __  _    " << std::endl;
+    std:: cout << "\t\t\t\t" <<  " |\\  /| |  |    / |      | ) |  | |\\  ||\\  ||   | )                 " << std::endl;
+    std:: cout << "\t\t\t\t" <<  " | \\/ | |==|   /  |==    |/  |  | | \\ || \\ ||== |/        " << std::endl;
+    std:: cout << "\t\t\t\t" <<  " |    | |  |  /__ |__    |\\  |__| |  \\||  \\||__ |\\          " << std::endl;
+    std:: cout << "\t\t\t\t" <<  "===================================================" << std::endl;
+    std:: cout << "                                     " << std::endl;
+    std:: cout << "                                     " << std::endl;
+
 
     a:
     Game mazeGame;

@@ -15,7 +15,7 @@ void Manager::Clear(){
 
 void Manager::Input(){
     char move;
-    std::cout<<"Make a move\n";
+    std::cout<<"\nMake a move\n";
     std::cin>>move;
     
     switch(move){

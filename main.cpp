@@ -17,7 +17,7 @@ int main(){
     #else
     system("clear");
     #endif
-    std::cout<<"Level: "<<level;
+    std::cout<<"Level: "<<level<<std::endl;
     mazeGame.Play();
     std::cout<<"Would you like to play again? Enter y to play again and press any key to exit\n";
     std::cin>> choice;

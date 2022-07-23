@@ -2,6 +2,7 @@
 #define MANAGER
 
 #include <conio.h>
+#include <stdlib.h>
 
 #include "maze.h"
 #include "player.h"

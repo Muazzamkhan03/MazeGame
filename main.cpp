@@ -19,7 +19,7 @@ int main(){
     #endif
     
     mazeGame.Play();
-    std::cout<<"Would you like to play again? Enter y to play again and n to exit\n";
+    std::cout<<"Would you like to play again? Enter y to play again and press any key to exit\n";
     std::cin>> choice;
 
     if(choice == 'y' || choice == 'Y'){

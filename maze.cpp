@@ -89,7 +89,7 @@ void Maze::Display(int pX, int pY){
             for(int i=0;i<11;i++){
                 for(int j=0;j<10;j++){
                     if(j==pX && i==pY){//instead of the maze char, put player's 'P' 
-                        std::cout<<"P ";
+                        std::cout<<"o ";
                         continue;
                     }
                     std::cout<<maze[i][j]<<" ";

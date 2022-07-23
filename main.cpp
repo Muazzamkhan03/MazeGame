@@ -1,13 +1,13 @@
 #include "game.h"
 
 int main(){
-    Game mazeGame;
     int level;
     char choice;
     
     std::cout<<"\n***** MAZE RUNNER  *****\n";
 
     a:
+    Game mazeGame;
     std::cout<<"Enter the level you want to play:  1  2  3  4  5 \n";
     std::cin>>level;
     mazeGame.levelChoice(level);

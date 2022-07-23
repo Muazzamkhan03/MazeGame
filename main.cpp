@@ -5,7 +5,7 @@ int main(){
     int level;
     char choice;
     
-    std::cout<<"\n***** WELCOME TO MAZE GAME *****\n";
+    std::cout<<"\n***** MAZE RUNNER  *****\n";
 
     a:
     std::cout<<"Enter the level you want to play:  1  2  3  4  5 \n";
